@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-08-12T22:03:04.162Z",
+    "end": "2022-08-12T22:03:08.596Z",
+    "duration": 4434,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "41fef2d4-0cdf-418e-8010-24879b0b0d6e",
+      "title": "",
+      "fullFile": "cypress/integration/cucumber-tests/login.feature",
+      "file": "cypress/integration/cucumber-tests/login.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f59d75fa-20d9-4cb7-9e00-1c518a562b19",
+          "title": "Login to Appication",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Valid login",
+              "fullTitle": "Login to Appication Valid login",
+              "timedOut": null,
+              "duration": 1434,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Step implementation missing for: I submin login",
+                "estack": "Error: Step implementation missing for: I submin login\n    at Context.resolveAndRunStepDefinition (http://zero.webappsecurity.com/__cypress/tests?p=cypress\\integration\\cucumber-tests\\login.feature:10463:11)\n    at Context.eval (http://zero.webappsecurity.com/__cypress/tests?p=cypress\\integration\\cucumber-tests\\login.feature:9778:35)",
+                "diff": null
+              },
+              "uuid": "cea96cb9-c005-430d-a2df-12e542c39bac",
+              "parentUUID": "f59d75fa-20d9-4cb7-9e00-1c518a562b19",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "cea96cb9-c005-430d-a2df-12e542c39bac"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 1434,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

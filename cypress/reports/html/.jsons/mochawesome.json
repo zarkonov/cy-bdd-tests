@@ -1,0 +1,90 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-08-12T19:50:42.057Z",
+    "end": "2022-08-12T19:50:42.374Z",
+    "duration": 317,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "2b174527-116e-4393-8027-8be6a8d8fc9a",
+      "title": "",
+      "fullFile": "cypress/integration/cucumber-tests/login.feature",
+      "file": "cypress/integration/cucumber-tests/login.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "An uncaught error was detected outside of a test",
+          "fullTitle": "An uncaught error was detected outside of a test",
+          "timedOut": null,
+          "duration": 244,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "throw err;",
+          "err": {
+            "message": "TypeError: The following error originated from your test code, not from Cypress.\n\n  > Cannot read properties of undefined (reading 'signals')\n\nWhen Cypress detects uncaught errors originating from your test code it will automatically fail the current test.\n\nCypress could not associate this error to any specific test.\n\nWe dynamically generated a new test to display this failure.",
+            "estack": "TypeError: The following error originated from your test code, not from Cypress.\n\n  > Cannot read properties of undefined (reading 'signals')\n\nWhen Cypress detects uncaught errors originating from your test code it will automatically fail the current test.\n\nCypress could not associate this error to any specific test.\n\nWe dynamically generated a new test to display this failure.\n    at normalizeSignal (http://localhost:50461/__cypress/tests?p=cypress\\integration\\cucumber-tests\\login.feature:96843:1)\n    at Array.map (<anonymous>)\n    at getSignals (http://localhost:50461/__cypress/tests?p=cypress\\integration\\cucumber-tests\\login.feature:96823:53)\n    at getSignalsByName (http://localhost:50461/__cypress/tests?p=cypress\\integration\\cucumber-tests\\login.feature:96730:38)\n    at Object.665../realtime.js (http://localhost:50461/__cypress/tests?p=cypress\\integration\\cucumber-tests\\login.feature:96744:21)\n    at o (http://localhost:50461/__cypress/tests?p=cypress\\integration\\cucumber-tests\\login.feature:1:265)\n    at eval (http://localhost:50461/__cypress/tests?p=cypress\\integration\\cucumber-tests\\login.feature:1:316)\n    at Object.559.human-signals (http://localhost:50461/__cypress/tests?p=cypress\\integration\\cucumber-tests\\login.feature:78185:25)\n    at o (http://localhost:50461/__cypress/tests?p=cypress\\integration\\cucumber-tests\\login.feature:1:265)\n    at eval (http://localhost:50461/__cypress/tests?p=cypress\\integration\\cucumber-tests\\login.feature:1:316)",
+            "diff": null
+          },
+          "uuid": "ccc9a35a-4913-475d-9654-1a73822f9c40",
+          "parentUUID": "2b174527-116e-4393-8027-8be6a8d8fc9a",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [],
+      "failures": [
+        "ccc9a35a-4913-475d-9654-1a73822f9c40"
+      ],
+      "pending": [],
+      "skipped": [],
+      "duration": 244,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
