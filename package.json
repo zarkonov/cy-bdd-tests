@@ -1,0 +1,28 @@
+{
+  "name": "cy-bdd-tests",
+  "version": "1.0.0",
+  "description": "Cypress with cucember example",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zarkonov/cy-bdd-tests.git"
+  },
+  "keywords": [
+    "cy",
+    "&",
+    "cucember"
+  ],
+  "author": "zn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zarkonov/cy-bdd-tests/issues"
+  },
+  "homepage": "https://github.com/zarkonov/cy-bdd-tests#readme",
+  "dependencies": {
+    "cypress": "^9.5.0",
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  }
+}
